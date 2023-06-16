@@ -22,30 +22,3 @@ header h1 {
     font-size: 50px;
     padding: 5px 0px 3px 0px;
 }
-
-header p {
-    color: lightgreen;
-    text-align: center;
-    padding: 2px 0px;
-    font-size: 20px;
-}
-
-nav ul {
-    display: flex;
-    padding: 5px 5px 0px 5px;
-    justify-content: end;
-}
-
-nav ul li {
-    margin-left: 8px;
-}
-
-nav a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: blue;
-}
