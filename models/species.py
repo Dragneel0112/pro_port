@@ -12,12 +12,16 @@ class Species(BaseModel, Base):
     """Representation of city """
     if models.storage_t == "db":
         __tablename__ = 'species'
-        plant_id = Column(String(60), ForeignKey('plant.id'), nullable=False)
         name = Column(String(128), nullable=False)
-        
+        text = Column(String(1024), nullable=False)
+        image_url = Column(String(128), nullable=False)
+        plant_id = Column(String(60), ForeignKey('plants.id'), nullable=False)
+
     else:
-        state_id = ""
         name = ""
+        text = ""
+        image_url = ""
+        plant_id = ""
 
     def __init__(self, *args, **kwargs):
         """initializes city"""

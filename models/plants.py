@@ -14,8 +14,8 @@ class Plants(BaseModel, Base):
         __tablename__ = 'plants'
         name = Column(String(128), nullable=False)
         species = relationship("Species",
-                              backref="plant",
-                              cascade="all, delete, delete-orphan")
+                               backref="plant",
+                               cascade="all, delete, delete-orphan")
     else:
         name = ""
 
