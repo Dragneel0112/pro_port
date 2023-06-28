@@ -22,17 +22,17 @@ class DBStorage:
 
     def __init__(self):
         """Instantiate a DBStorage object"""
-        Plant_MYSQL_USER = getenv('Plant_MYSQL_USER')
-        Plant_MYSQL_PWD = getenv('Plant_MYSQL_PWD')
-        Plant_MYSQL_HOST = getenv('Plant_MYSQL_HOST')
-        Plant_MYSQL_DB = getenv('Plant_MYSQL_DB')
-        Plant_ENV = getenv('Plant_ENV')
+        LIT_MYSQL_USER = getenv('LIT_MYSQL_USER')
+        LIT_MYSQL_PWD = getenv('LIT_MYSQL_PWD')
+        LIT_MYSQL_HOST = getenv('LIT_MYSQL_HOST')
+        LIT_MYSQL_DB = getenv('LIT_MYSQL_DB')
+        LIT_ENV = getenv('LIT_ENV')
         self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.
-                                      format(Plant_MYSQL_USER,
-                                             Plant_MYSQL_PWD,
-                                             Plant_MYSQL_HOST,
-                                             Plant_MYSQL_DB))
-        if Plant_ENV == "test":
+                                      format(LIT_MYSQL_USER,
+                                             LIT_MYSQL_PWD,
+                                             LIT_MYSQL_HOST,
+                                             LIT_MYSQL_DB))
+        if LIT_ENV == "test":
             Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None):

@@ -13,7 +13,7 @@ class Species(BaseModel, Base):
     if models.storage_t == "db":
         __tablename__ = 'species'
         name = Column(String(128), nullable=False)
-        text = Column(String(1024), nullable=False)
+        description = Column(String(1024), nullable=False)
         image_url = Column(String(128), nullable=False)
         plant_id = Column(String(60), ForeignKey('plants.id'), nullable=False)
 
