@@ -16,27 +16,26 @@
         <ul>
             <li><a href="http://127.0.0.1:5000/">Home</a></li>
             <li><a href="http://127.0.0.1:5000/leaf">Leaf</a></li>
-            <li><a href="http://127.0.0.1:5000/flower">Flower</a></li>
+            <li><a href="http://127.0.0.1:5000/root">Root</a></li>
         </ul>
     </nav>
     <div class="container">
         <aside>
-            <ul> <strong>Root Vegetables</strong>
+            <ul> <strong>Flowers</strong>
                 {% for sp in species %}
-                {% if sp.plant_id == "1943c1c2-3bb6-42d0-a813-b995058b94c6" %}
+                {% if sp.plant_id == "f1246833-e566-466c-af56-af007e794e44" %}
                 <li><a href="#"> {{sp.name}} </a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
         </aside>
         <div class="main">
-            <h2>Roots</h2>
-            <img src="../static/images/veggies.jpeg" alt="Root image">
+            <h2>Flowers</h2>
+            <img src="../static/images/flowers.jpg" alt="Root image">
             <p>
-                Root vegetables flourish in well-drained, deep, loose soil where their roots can easily expand. Root crops generally grow well in sandy loam and peat soil, and they tend to struggle in clay soils.
-                The optimal soil pH for root growth is between 6 and 7.
-                Most root vegetables need at least six hours of direct sunlight per day.
-                Roots need extra phosphorus (the P in N-P-K), which can be found in bone meal, wood ashes, and rock phosphate. Incorporate high quality compost or well-rotted manure for good drainage, air circulation, and slow release nutrients
+                In general, foliage plants grow best between 22 degrees and 27 degrees C, Most flowering plants prefer the same daytime temperature range, but grow best when nighttime temperatures range from 13 degrees to 16 degrees C.
+                Ideal NPK fertilizer ratio of those nutrients for flowering plants is 3-1-2. 
+                Phosphorous helps root develop which helps flowers grow later on.
             </p>
         </div>
     </div><!--End of Container-->

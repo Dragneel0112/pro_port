@@ -13,15 +13,41 @@ def close_db(error):
     """ Remove the current SQLAlchemy Session """
     storage.close()
 
+@app.route('/', strict_slashes=False)
+def home():
+    """ Serves Homepage """
+    return render_template('home.html')
 
 @app.route('/root', strict_slashes=False)
-def lit():
-    """ LIT is alive! """
+def root():
+    """ Serves main Root veg page """
     species = storage.all(Species).values()
     species = sorted(species, key=lambda k: k.name)
     
     
     return render_template('root_dynamic.html',
+                           species=species,
+                           cache_id=uuid.uuid4())
+
+@app.route('/flower', strict_slashes=False)
+def flower():
+    """ Serves main Flower page """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    
+    
+    return render_template('flower_dynamic.html',
+                           species=species,
+                           cache_id=uuid.uuid4())
+
+@app.route('/leaf', strict_slashes=False)
+def leaf():
+    """ Serves main leaf page """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    
+    
+    return render_template('leaves_dynamic.html',
                            species=species,
                            cache_id=uuid.uuid4())
 
