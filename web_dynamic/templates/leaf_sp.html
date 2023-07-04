@@ -26,21 +26,22 @@
                 <li><a href="http://127.0.0.1:5000/leaf/broccoli"> Broccoli </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/cabbage"> Cabbage </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/collardgreen"> Collard Greens </a></li>
-                <li><a href="http://127.0.0.1:5000/leaf/Kale"> Kale </a></li>
+                <li><a href="http://127.0.0.1:5000/leaf/kale"> Kale </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/lettuce"> Lettuce </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/mustardgreens"> Mustard Greens </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/rocket"> Rocket </a></li>
                 <li><a href="http://127.0.0.1:5000/leaf/spinach"> Spinach </a></li>
-                <li><a href="http://127.0.0.1:5000/leaf/watercress"> Watercress </a></li>
+                <li><a href="http://127.0.0.1:5000/leaf/watercress"> Watercress </a></li>  
             </ul>
         </aside>
         <div class="main">
-            <h2>Leafy Vegetables</h2>
-            <img src="../static/images/leafVeg.jpeg" alt="Root image">
-            <p>
-                Leafy greens grow best in open, level areas where the soil is loose, rich, and well-drained. Although leafy crops tolerate shade better than plants grown for their fruits or roots, at least six hours of sunshine daily will help ensure a high-quality harvest. Avoid planting leafy greens in heavy clay or sandy soils.
-                Leafy vegetables generally have quite high requirements for both phosphorous (P) and potassium (K) and rather low requirements for nitrogen (N). K requirement is often double the requirement of N.            
-            </p>
+            {% for sp in species %}
+            {% if sp.id == name_id %}
+            <h2>{{sp.name}}</h2>
+            <img src="../static/images/{{image}}" alt="Leaf image">
+            <p> {{sp.description}} </p>
+            {% endif %}
+            {% endfor %}
         </div>
     </div><!--End of Container-->
     <div class="dropdown">

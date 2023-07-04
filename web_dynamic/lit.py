@@ -203,6 +203,156 @@ def turnip():
                            cache_id=uuid.uuid4())
 
 
+@app.route('/leaf/bokchoy', strict_slashes=False)
+def Bok_Choy():
+    """ Serves Bok Choy species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "0a914435-205c-4d1f-83cc-e2656d84b2ac"
+    image = "Bok Choy.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/broccoli', strict_slashes=False)
+def Broccoli():
+    """ Serves Broccoli species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "10210da4-0a3b-4131-bbd8-af145607b3f0"
+    image = "Broccoli.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/cabbage', strict_slashes=False)
+def Cabbage():
+    """ Serves Cabbage species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "24817cd6-dbfe-43fd-ac25-ebc02ae78018"
+    image = "cabbage.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/collardgreen', strict_slashes=False)
+def Collard_greens():
+    """ Serves Collard greens species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "289220a2-84dd-4a3d-adb9-ef89712889e0"
+    image = "Collard green.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/kale', strict_slashes=False)
+def Kale():
+    """ Serves kale species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "36d9c87a-3f5f-4f75-b610-eb69131c89fc"
+    image = "Kale.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/lettuce', strict_slashes=False)
+def Lettuce():
+    """ Serves Lettuce species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "1f7589d4-8614-4d71-b943-dc43cd1c1523"
+    image = "Lettuce.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/mustardgreens', strict_slashes=False)
+def Mustard_green():
+    """ Serves Mustard Green species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "eefc9cec-6eab-4220-b61d-c5d7c8c63b5e"
+    image = "Mustard greens.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/rocket', strict_slashes=False)
+def Rocket():
+    """ Serves Rocket species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "fdfe5ebb-33d1-49a6-8fa2-ce2ac5307227"
+    image = "Rocket.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/spinach', strict_slashes=False)
+def Spinach():
+    """ Serves Spinach species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "c3670013-b114-4b14-9076-6079bc0d01a2"
+    image = "Spinach.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/leaf/watercress', strict_slashes=False)
+def Watercress():
+    """ Serves Watercress species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "38d07752-972a-4d6c-ad3b-75951f62bb63"
+    image = "Watercress.jpeg"
+
+    return render_template('leaf_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
 if __name__ == "__main__":
     """ Main Function """
     app.run(host='0.0.0.0', port=5000)
