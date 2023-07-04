@@ -35,13 +35,13 @@
             </ul>
         </aside>
         <div class="main">
-            <h2>Flowers</h2>
-            <img src="../static/images/flowers.jpg" alt="Root image">
-            <p>
-                In general, foliage plants grow best between 22 degrees and 27 degrees C, Most flowering plants prefer the same daytime temperature range, but grow best when nighttime temperatures range from 13 degrees to 16 degrees C.
-                Ideal NPK fertilizer ratio of those nutrients for flowering plants is 3-1-2. 
-                Phosphorous helps root develop which helps flowers grow later on.
-            </p>
+            {% for sp in species %}
+            {% if sp.id == name_id %}
+            <h2>{{sp.name}}</h2>
+            <img src="../static/images/{{image}}" alt="Leaf image">
+            <p> {{sp.description}} </p>
+            {% endif %}
+            {% endfor %}
         </div>
     </div><!--End of Container-->
     <div class="dropdown">

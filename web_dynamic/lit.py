@@ -353,6 +353,156 @@ def Watercress():
                            cache_id=uuid.uuid4())
 
 
+@app.route('/flower/carnation', strict_slashes=False)
+def Carnation():
+    """ Serves Carnations species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "9226f25f-78ab-449f-b2db-600d8a1fa79a"
+    image = "Carnations.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/daisy', strict_slashes=False)
+def Daisy():
+    """ Serves Daisy species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "a2fb989e-39ed-4438-8af0-6a1681e66823"
+    image = "Daisy.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/hydrangea', strict_slashes=False)
+def Hydrangea():
+    """ Serves Hydrangea species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "217c575f-04b5-419a-83a2-a9d5b7b85484"
+    image = "Hydrangea.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/lilac', strict_slashes=False)
+def Lilac():
+    """ Serves lilac species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "b5170399-305c-47aa-ac7f-15de29d7a057"
+    image = "Lilac.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/lilly', strict_slashes=False)
+def Lilly():
+    """ Serves lilly species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "c5ff3c3c-b65e-420b-9661-d7b8597707ca"
+    image = "Lilly.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/marigold', strict_slashes=False)
+def Marigold():
+    """ Serves Marigold species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "c707a85c-b344-438b-b986-42f18c5a6899"
+    image = "Marigold.jpg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/orchid', strict_slashes=False)
+def Orchid():
+    """ Serves Orchid species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "7f307d6a-b2db-4d55-b9f4-b7b34cb0b951"
+    image = "Orchid.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/rose', strict_slashes=False)
+def Rose():
+    """ Serves Rose species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "fc1fe744-065d-4b38-8cde-71241d1e878d"
+    image = "Rose.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/sunflower', strict_slashes=False)
+def Sunflower():
+    """ Serves Sunflower species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "0f1c9c52-b40b-41ff-8079-f86240a90e73"
+    image = "Sunflower.jpeg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
+@app.route('/flower/tulip', strict_slashes=False)
+def Tulip():
+    """ Serves Tulip species """
+    species = storage.all(Species).values()
+    species = sorted(species, key=lambda k: k.name)
+    name_id = "569abbe3-9dab-4496-8ecd-2de449b6c38b"
+    image = "Tulip.jpg"
+
+    return render_template('flower_sp.html',
+                           species=species,
+                           name_id=name_id,
+                           image=image,
+                           cache_id=uuid.uuid4())
+
+
 if __name__ == "__main__":
     """ Main Function """
     app.run(host='0.0.0.0', port=5000)
