@@ -28,6 +28,7 @@ def not_found(error):
     """
     return make_response(jsonify({'error': "Not found"}), 404)
 
+
 app.config['SWAGGER'] = {
     'title': 'Let It Grow API',
     'uiversion': 3
