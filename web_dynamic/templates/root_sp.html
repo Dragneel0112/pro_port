@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let it Grow</title>
-    <link rel="icon" href="../static/images/.png">
+    <link rel="icon" href="../static/images/icon.png">
     <link rel="stylesheet" type="text/css" href="../static/styles/plant_dynamic.css?{{ cache_id}}">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../static/scripts/root.js?{{cache_id }}"></script>
@@ -47,10 +47,13 @@
     <div class="dropdown">
         <button>Ailments</button>
         <div class="dropdown-options">
-          <a href="#">Powdery Mildew</a>
-          <a href="#">Wilt</a>
-          <a href="#">Black Spot</a>
+          <button id="powderyMildew">Powdery Mildew</button>
+          <button>Wilt</button>
+          <button>Black Spot</button>
         </div>
+      </div>
+      <div id="ailment">
+
       </div>       
 </body>
 </html>
