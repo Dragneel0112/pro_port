@@ -15,6 +15,7 @@ def close_db(error):
 
 
 @app.route('/', strict_slashes=False)
+@app.route('/home', strict_slashes=False)
 def home():
     """ Serves Homepage """
     return render_template('home.html')
