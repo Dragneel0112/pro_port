@@ -52,17 +52,11 @@ nav a:hover {
 }
 
 @media (max-width: 630px) {
-    .container .main .dropdown{
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 5px;
-    }
-
+    
     nav {
         display: block;
         text-align: center;
         padding: 5px;
     }
+
 }

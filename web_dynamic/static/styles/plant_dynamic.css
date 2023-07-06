@@ -149,3 +149,23 @@ nav a:hover {
     background-color: #ddd;
     border-radius:5px;
   }
+
+  @media (max-width: 630px) {
+    .container .main .dropdown{
+        
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: flex;
+        align-content: center;
+    }
+}
