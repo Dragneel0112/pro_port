@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" City Class"""
+""" Species Class"""
 import models
 from models.base_model import BaseModel, Base
 from os import getenv
@@ -9,7 +9,7 @@ from sqlalchemy.orm import relationship
 
 
 class Species(BaseModel, Base):
-    """Representation of city """
+    """Representation of Species """
     if models.storage_t == "db":
         __tablename__ = 'species'
         name = Column(String(128), nullable=False)
@@ -24,5 +24,5 @@ class Species(BaseModel, Base):
         plant_id = ""
 
     def __init__(self, *args, **kwargs):
-        """initializes city"""
+        """initializes Species"""
         super().__init__(*args, **kwargs)

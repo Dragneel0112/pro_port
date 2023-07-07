@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The base model for let it based of AirBnb
+The base model for let it grow
 """
 
 from datetime import datetime
